@@ -1,0 +1,284 @@
+/*  */
+
+/*  */
+
+/*  */
+
+/* !!!ДЛЯ ВСЕХ СТРАНИЦ: */
+
+/* импортировал шрифты из гугл */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* установил шрифты и цвет фона во всех документах */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #696969;
+    font-size: 14px;
+}
+
+/* родительский блок, который задает ширину всего сайта */
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+/* работа с логотипом */
+
+.logotip {
+    width: 161px;
+    margin-top: 0px;
+}
+
+.logo {
+    width: 161px;
+}
+
+/* размер шрифта к названиям страниц */
+
+.page_name {
+    font-size: 26px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+/* задаю всем изображениям рамку (кроме лого) */
+
+.img_index, .img_shop, .img_prod {
+    outline: 1px solid #636363;
+}
+
+/* убрал маркеры у списка и добавил горизонтальную черту */
+
+.navigation {
+    font-size: 19px;
+    margin-top: -24px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-left: 6px;
+}
+
+/* применил цвет ссылок и убрал подчеркивание */
+
+.navigation a {
+    color: #47acff;
+    text-decoration: none;
+}
+
+/* убрал отметки рядом с меню навигации */
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 6px;
+}
+
+/* анимация при наведении */
+
+.navigation a:hover {
+    color: #008cff;
+}
+
+/* сделал цвет текста более тусклым, размер шрифта в footer и добавил горизонтальную черту */
+
+.footer {
+    color: #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 14px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* !!!INDEX.HTML: */
+
+/* цвет текста и размер шрифта к главной странице (к тексту) */
+
+.short_info_text {
+    margin-top: 14px;
+    color: #696969;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* !!!SHOP.HTML: */
+
+/* сделал контент гибким и переносимым на другие строки */
+
+.shop_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* задал отступы между продуктами */
+
+.shop_product_name {
+    margin-right: 30px;
+}
+
+/* применил стили к названиям товаров */
+
+.shop_product_name a {
+    font-size: 18px;
+    color: #696969;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* эффекты при наведении на ссылки */
+
+.shop_product_name a:hover {
+    color: #008cff;
+}
+
+/* стили к краткой информации о товаре */
+
+.short_description {
+    margin-bottom: 14px;
+}
+
+/* стили для изображений в каталоге */
+
+.img_shop {
+    width: 400px;
+}
+
+/* при наведении на изображения в каталоге, вокруг появляется рамка */
+
+.img_shop:hover {
+    outline: 1px solid #008cff;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* !!!CONTACTS.HTML: */
+
+/* заголовки на странице контаков пожирнее и позаметнее */
+
+.contacts_header_name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* отступ от таблицы форм */
+
+.main_form {
+    margin-bottom: 14px;
+    width: 370px;
+}
+
+/* изменил ширину поля ввода имени, емеила и текстовой зоны комментария */
+
+.input_name, .input_email, .textarea {
+    width: 360px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* поле ввода имени начинается с заглавной */
+
+.input_name {
+    text-transform: capitalize;
+}
+
+/* подзаголовки на странице контактов */
+
+.contacts_header_name {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 14px;
+}
+
+/* добавил отступ перед таблицей */
+
+.google_map {
+    margin-top: 14px;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* !!!PRODUCT-N.HTML: */
+
+/* подзаголовок пожирнее и позаметнее */
+
+.product_discription_header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
+.product_discription {
+    color: #696969;
+}
+
+/* применил цвет шрифта, как и у параграфов и заголовков к спискам в подробном описании товаров */
+
+.product_characteristics {
+    color: #696969;
+    margin-top: -3px;
+}
+
+.product_characteristics_header {
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.charact li {
+    margin-left: -20px;
+}
+
+/* стили к кнопке "купить": размеры, шрифт, действие при наведении, нажатии. Убрал стандартную рамку при фокусе */
+
+.button_buy {
+    width: 150px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.button_buy:hover {
+    background-color: #008cff;
+    color: white;
+    cursor: pointer;
+}
+
+.button_buy:focus {
+    outline: none;
+}
+
+.button_buy:active {
+    color: #008cff;
+    background-color: white;
+}
